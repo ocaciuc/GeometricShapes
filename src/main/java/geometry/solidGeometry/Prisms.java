@@ -1,3 +1,8 @@
+package geometry.solidGeometry;
+
+import geometry.planeGeometry.Curve;
+import geometry.planeGeometry.Polygon;
+
 import java.util.ArrayList;
 
 /**
@@ -5,13 +10,13 @@ import java.util.ArrayList;
  */
 public class Prisms extends ThreeDShape
 {
-    TriangleTopics triangle;
+    Polygon triangle;
     int length;
 
     public  Prisms(int length, int edgesNr, ArrayList<Integer> edges)
     {
         this.length = length;
-        this.triangle = new TriangleTopics(edgesNr, edges);
+        this.triangle = new Polygon(edges);
     }
 
     public double calculateVolume()

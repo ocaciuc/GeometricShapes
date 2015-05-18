@@ -1,23 +1,25 @@
+package geometry.planeGeometry;
+
+import geometry.planeGeometry.TwoDShape;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Oana on 05.05.2015.
  */
-public class TriangleTopics extends TwoDShape
+public class Polygon extends TwoDShape
 {
-    protected int edgesNr;
     List<Integer> edges;
 
+    public Polygon(){
+    }
 
-    public TriangleTopics(int edgesNr, ArrayList<Integer> edges)
-    {
-        this.edgesNr = edgesNr;
+    public Polygon(List<Integer> edges){
         this.edges = edges;
     }
 
-    public int calculatePerimeter()
-    {
+    public int calculatePerimeter(){
         int perimeter = 0;
 
         for(int edge : edges)

@@ -1,12 +1,14 @@
+package geometry.planeGeometry;
+
 /**
  * Created by Oana on 05.05.2015.
  */
-public class CircleTopics extends TwoDShape
+public class Curve extends TwoDShape
 {
     protected int radius;
 
 
-    public CircleTopics(int radius)
+    public Curve(int radius)
     {
         this.radius = radius;
     }
@@ -20,5 +22,6 @@ public class CircleTopics extends TwoDShape
     {
         return Math.PI*Math.pow(radius,2);
     }
+
 
 }
